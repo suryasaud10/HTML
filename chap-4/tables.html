@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table {
+          width: 100%; /* Make the table take up the full width of its container */
+          border-collapse: collapse; /* Collapse borders between table cells */
+          font-family: sans-serif; /* Use a common sans-serif font */
+        }
+      
+        th, td {
+          border: 1px solid #ddd; /* Add a light gray border to table headers and data cells */
+          padding: 8px; /* Add some padding inside the cells for better readability */
+          text-align: left;
+          border: 1px solid black; /* Align text to the left within cells */
+        }
+      
+        th {
+          background-color: #d37676; /* Light gray background for table headers */
+          font-weight: bold; /* Make header text bold */
+        }
+      
+        tr:nth-child(even) {
+          background-color: #f9f9f9; /* Slightly different background for even rows for visual distinction */
+        }
+      
+        /* You can add more specific styles as needed, for example: */
+        /*
+        .highlight {
+          background-color: yellow;
+          font-weight: bold;
+        }
+      
+        td.center {
+          text-align: center;
+        }
+        */
+      </style> 
+</head>
+<body>
+    <h1>Tables in HTML</h1>
+    <table>
+        <thead>
+            <!-- header of table -->
+             <tr>
+                <!-- table row -->
+
+                 <th>Name</th>
+                 <th>Role</th>
+                 <th>Salary</th>
+             </tr>
+        </thead>
+        <tbody>
+            <!-- Body of the table -->
+            <tr>
+                <td>Surya</td>
+                <td>Student</td>
+                <td>34000</td>
+            </tr>
+            <tr>
+                <td>yuvraj</td>
+                <td>Student</td>
+                <td>33 000</td>
+            </tr>
+            <tr>
+                <td colspan="1">Thanks</td>
+                <td colspan="1">You</td>
+                <td colspan="1"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
