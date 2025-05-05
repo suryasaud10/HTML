@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+select,
+textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="text"]::placeholder,
+input[type="number"]::placeholder,
+input[type="password"]::placeholder,
+textarea::placeholder {
+    color: #aaa;
+}
+
+select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg fill="%23333" viewBox="0 0 4 5"><path d="M2 0L0 2h4zm0 5L0 3h4z"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 10px);
+    background-position-y: 50%;
+    background-size: 8px;
+    padding-right: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Specific styling for radio and checkbox groups for better layout */
+div > input[type="radio"],
+div > label[for] {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+div > input[type="checkbox"],
+div > label[for="terms"] {
+    display: inline-block;
+}
+    </style>
+</head>
+<body>
+    <!-- <h1>Forms in html</h1> -->
+    <form action="">
+        <DIV>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter Name">
+        </DIV>
+        <DIV>
+            <label for="phone">Phone</label>
+            <input id="Phone" type="number" placeholder="Phone No.">
+        </DIV>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password">   
+        </div>
+        <div>
+            <label for="Gender">Gender</label>
+            <select name="Gender" id="gen">
+                <option value=""disabled selected>select Gender</option>
+               <option value="male">Male</option>
+               <option value="female">Female</option>
+               <option value="others">Other</option>
+            </select>
+            
+            <div>
+                <!-- checkbuttom -->
+             <input type="radio" id="Basic" name="subscraption">
+             <label for="basic">Basic</label>
+             <input type="radio" id="premium" name="subscraption">
+             <label for="premium">Premium</label>
+            </div>
+            <!-- checkbox -->
+             <div>
+                <input type="checkbox" id="terms"required>
+                <label for="terms">I agree terms and condition.</label>
+             </div>
+
+             <div>
+                <label for="comments">Commants</label>
+                <textarea name="comments" id="" placeholder="Enter your text"></textarea>
+             </div>
+
+             <div>
+                <button
+                    type="submit">Submit</button>
+              </div>
+        </div>
+    </form>
+    
+</body>
+</html>
